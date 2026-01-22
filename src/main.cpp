@@ -9,7 +9,7 @@
 
 #define PIN_STEP  25
 #define PIN_DIR   26
-#define PIN_EN    27          // EN активен LOW
+#define PIN_EN    27  // EN активен LOW
 #define PIN_AL    34
 
 // WiFi (STA)
@@ -566,7 +566,6 @@ static void wifiInit() {
 
   server.begin();
 }
-
 
 void setup() {
   Serial.begin(115200);
