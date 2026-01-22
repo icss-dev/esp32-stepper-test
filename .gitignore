@@ -1,4 +1,8 @@
 .pio/
 .vscode/
 platformio.ini
+<<<<<<< HEAD
 __old/
+=======
+__old/
+>>>>>>> 2c83ec3 (Initial release: ESP32 FastAccelStepper + Web UI)
