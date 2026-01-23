@@ -52,7 +52,7 @@ static FastAccelStepperEngine engine;
 static FastAccelStepper* stepper = nullptr;
 
 static void applyEnablePin() {
-  digitalWrite(PIN_EN, g_en ? LOW : HIGH);
+  digitalWrite(PIN_EN, g_en ? HIGH : LOW);
 }
 
 static inline void applyDirPin() {
@@ -590,9 +590,6 @@ void setup() {
   }
 
   stepper->setDirectionPin(PIN_DIR);
-  stepper->setEnablePin(PIN_EN);
-  stepper->setAutoEnable(true);
-
   applyParamsToStepper();
 
   qCmd = xQueueCreate(16, sizeof(Cmd));
